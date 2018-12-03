@@ -1,0 +1,42 @@
+
+# Election - DAPP Application
+A fully **Decentralized application**, or **Dapp**, on the Ethereum Network!
+
+
+Follow the steps below to download, install, and run this project.
+
+## Dependencies
+Install these prerequisites to run this application.
+- NPM: https://nodejs.org
+- Truffle: https://github.com/trufflesuite/truffle
+- Ganache: http://truffleframework.com/ganache/
+- Metamask: https://metamask.io/
+
+
+## Step 1. Clone the project
+`https://github.com/dibakarsutradhar/election.git`
+
+## Step 2. Install dependencies
+```
+$ cd election
+$ npm install
+```
+## Step 3. Start Ganache
+Open the Ganache GUI client that you downloaded and installed. This will start your local blockchain instance.
+![Ganache](https://raw.githubusercontent.com/dibakarsutradhar/election/master/images/ganache.png)
+
+## Step 4. Compile & Deploy Election Smart Contract
+`$ truffle migrate --reset`
+You must migrate the election smart contract each time your restart ganache.
+
+## Step 5. Configure Metamask
+- Open Metamask Chrome Extension
+- Create a New Account if you already don't have one
+- Change the network from **Main ETH Network** to **Custom RPC**
+- Set up your Custom Network using Ganache's RPC Server. (eg. http://localhost:7545)
+- Connect metamask to your local Etherum blockchain provided by Ganache.
+- Import an account provided by ganache.
+
+## Step 6. Run the Front End Application
+`$ npm run dev`
+Visit this URL in your browser: http://localhost:3000
