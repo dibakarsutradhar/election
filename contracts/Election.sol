@@ -16,6 +16,11 @@ contract Election {
     // Store Candidates Count
     uint public candidatesCount;
 
+    // voted event
+    event votedEvent (
+        uint indexed _candidateId
+    );
+
     // Constructor
     constructor () public {
         addCandidate("Awami League");
@@ -39,5 +44,8 @@ contract Election {
 
         // update candidate vote count
         candidates[_candidateId].voteCount ++;
+
+        // trigger voted event
+        votedEvent(_candidateId);
     }
 }
