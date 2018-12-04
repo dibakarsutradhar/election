@@ -35,7 +35,9 @@ Open the Ganache GUI client that you downloaded and installed. This will start y
 ## Step 4. Compile & Deploy Election Smart Contract
 
 `$ truffle migrate --reset`
+
 ![truffle](https://github.com/dibakarsutradhar/election/blob/master/images/truffle-reset.PNG)
+
 You must migrate the election smart contract each time your restart ganache.
 
 
